@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Registration Form Activity</title>
+</head>
+<body>
+  <div class="container">
+    <img src="avatar.png" alt="">
+    <h1 class="form-title">Registration</h1>
+    <form action="#">
+      <div class="main-user-info">
+        <div class="user-input-box">
+          <label for="firstName">First Name</label>
+          <input type="text"
+                  placeholder="First Name"/>
+        </div>
+        <div class="user-input-box">
+          <label for="lastName">Last Name</label>
+          <input type="text"
+                  placeholder="Last Name">
+        </div>
+        <div class="user-input-box">
+          <label for="email">Email</label>
+          <input type="email"
+                  placeholder="Enter Email">
+        </div>
+        <div class="user-input-box">
+          <label for="phoneNumber">Phone Number</label>
+          <input type="text"
+                  pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"
+                  placeholder="+63">
+        </div>
+        <div class="user-input-box">
+          <label for="password">Password</label>
+          <input type="password"
+                  placeholder="Enter Password">
+        </div>
+        <div class="user-input-box">
+          <label for="confirmPassword">Confirm Password</label>
+          <input type="password"
+                  id="confirmPassword"
+                  name="confirmPassword"
+                  placeholder="Confirm Password"/>
+        </div>
+      </div>
+      <div class="gender-details-box">
+        <span class="gender-title">Gender</span>
+        <div class="gender-category">
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label>
+          <input type="radio" name="gender" id="other">
+          <label for="other">Other</label>
+        </div>
+      </div>
+          <div class="city-form">
+            <div class="city-group">
+          <label for="city">Select City</label>
+           </div>
+          <br>
+          <div class="category-group">
+          <select id="category" name="category">
+              <option value="cebu">---Select City---</option>
+              <option value="cebu">Cebu City</option>
+              <option value="talisay">Talisay City</option>
+              <option value="mandaue">Mandaue City</option>
+              <option value="lapu-lapu">Lapu-Lapu</option>
+              <option value="naga">Naga</option>
+              <option value="danao">Danao</option>
+              <option value="bogo">Bogo</option>
+            </select>
+          </div>
+          </div>
+          <div class="check-group">
+          <input id="checkbox" type="checkbox">
+          <label for="checkbox"> I agree to these <a href="#">Terms and Conditions</a>.
+          </label>
+          </div>
+          <div class="form-submit-btn">
+            <input type="submit" value="Register">
+          </div>
+          <div class="container-sign-in">
+            <p>Already have an account? <a href="#">Sign in</a>.</p>
+          </div>
+        </form>
+      </div>
+</body>
+</html>
